@@ -1,33 +1,34 @@
-# Spotify-Clone
+# React Native Spotify Clone Redesigned
 
-As part of learning to code,I completed a project that involved creating a basic Spotify clone using HTML, CSS, and JavaScript. This project was designed to showcase my skills in front-end web development.It is a responsive and user-friendly web application that allows users to play music.I used HTML and CSS to design and style the interface, and I implemented JavaScript to handle user input and interaction such as basic playback controls -play, pause, and next.I also gained experience working with version control tools such as Git and GitHub.
+<img  style="display: block; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/senor-cocktails.appspot.com/o/demo4.gif?alt=media&token=5a66456c-c3ab-4afc-9d89-7de32dca1957" heigth=300 width=300 />
 
-## Tech-Stack-
+Complete source code for my YouTube tutorial React Native Spotify Clone Redesigned (currently in progress, will upload soon). The design used was created by Heba Zatar, you can find it [here](https://www.behance.net/gallery/110213585/SPOTIFY-REDESIGN-UIUX-DESIGN-FREE?tracking_source=).
 
-<div align="left">
-<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
-<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> 
-<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-</div>
+This project uses the Spotify API. You will need to create a Spotify account to get a Client ID and Client Secret [here](https://developer.spotify.com/dashboard/). You will also need to install the React Native development environment as per docs [here](https://reactnative.dev/docs/0.65/environment-setup).
+NOTE: when creating your Redirect URI make sure you name it like this: `com.<YOUR_URI_NAME>:/callback`
 
-## Features-
+- Clone repo locally: `git clone https://github.com/AndresXI/RN-Spotify-Clone-Redesigned.git`
 
-- Play/Pause: Allows the user to start or pause the playback of the currently selected track.
-- Next/Previous: Enables the user to skip to the next or previous track in the playlist or album.
-- Seek: Allows the user to manually move forward or backward within a track by dragging a slider or clicking on a progress bar.
-- Display the currently playing song and album artwork.
+### Running the server locally
 
-## Usage-
+- Cd into api folder: `cd ./api`
+- Install dependencies: `npm install`
+- create .env file with ENV variables:
+  - `CLIENT_ID=<YOUR_CLIENT_ID_HERE>`
+  - `CLIENT_SECRET=<YOUR_CLIENT_SECRET_HERE>`
+  - `REDIRECT_URL=<YOUR_REDIRECT_URL_HERE>`
+  - Start server: `npm start`
 
-Once the Spotify clone is open in your browser, You can then click the play button next to the song to start playing it, and use the playback controls at the bottom of the page to control the song playback.The currently playing song and album artwork are displayed in the "Now Playing" section at the bottom of the page.
+### Running the app
 
-## Live-Demo-
+- Add .env file in root directory with ENV variables:
+  - `CLIENT_ID=<YOUR_CLIENT_ID_HERE>`
+  - `REDIRECT_URL=<YOUR_REDIRECT_URL_HERE>`
+  - `BASE_URL=https://api.spotify.com/v1`
+- Install dependencies: `npm install`
+- Install Pods: `cd ./ios && pod install`
+- Run Metro bundler: `npx react-native start`
+- Running in IOS: `npx react-native run-ios`
+- Running in Android: `npx react-native run-android`
 
-[Spotify-Clone-Live](https://spotify-clone-javascript.netlify.app/)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e37fba97-0766-4626-9212-06a9fa3e5f00/deploy-status?branch=main)](https://app.netlify.com/sites/animated-marshmallow-d90790/deploys)
-
-
-## Screenshot-
-
-![image](https://user-images.githubusercontent.com/48729682/222124168-70e510a9-0232-4c71-9939-cd7e8c512fcc.png)
+<img src="https://github.com/AndresXI/RN-Spotify-Clone-Redesigned/blob/main/screenshots/home.png?raw=true" width=250 /> <img src="https://github.com/AndresXI/RN-Spotify-Clone-Redesigned/blob/main/screenshots/search.png?raw=true" width=250 /> <img src="https://github.com/AndresXI/RN-Spotify-Clone-Redesigned/blob/main/screenshots/library.png?raw=true" width=250 /> <img src="https://github.com/AndresXI/RN-Spotify-Clone-Redesigned/blob/main/screenshots/profile.png?raw=true" width=250 /> <img src="https://github.com/AndresXI/RN-Spotify-Clone-Redesigned/blob/main/screenshots/artist.png?raw=true" width=250 /> <img src="https://github.com/AndresXI/RN-Spotify-Clone-Redesigned/blob/main/screenshots/track-player.png?raw=true" width=250 />
